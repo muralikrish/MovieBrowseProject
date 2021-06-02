@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="121" id="oYg-3w-pJA" customClass="MovieCell" customModule="MovieDB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="121"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oYg-3w-pJA" id="bdT-77-o22">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="121"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EnC-X0-ydR">
+                        <rect key="frame" x="16" y="14" width="298" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2vS-Fv-JyK">
+                        <rect key="frame" x="23" y="85" width="250" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="VBk-4k-eh7"/>
+                            <constraint firstAttribute="width" constant="250" id="VgV-zp-pqm"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IWn-YK-bhb">
+                        <rect key="frame" x="303" y="50" width="97" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="97" id="9fW-8Y-kjd"/>
+                            <constraint firstAttribute="height" constant="21" id="ZJC-82-bc3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="EnC-X0-ydR" firstAttribute="leading" secondItem="bdT-77-o22" secondAttribute="leading" constant="16" id="453-nc-hS8"/>
+                    <constraint firstAttribute="trailing" secondItem="EnC-X0-ydR" secondAttribute="trailing" constant="100" id="LVf-Qy-eqP"/>
+                    <constraint firstItem="2vS-Fv-JyK" firstAttribute="leading" secondItem="bdT-77-o22" secondAttribute="leadingMargin" constant="3" id="La4-J6-uzg"/>
+                    <constraint firstItem="EnC-X0-ydR" firstAttribute="top" secondItem="bdT-77-o22" secondAttribute="top" constant="14" id="e16-je-Hpp"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="2vS-Fv-JyK" secondAttribute="bottom" constant="4" id="es2-b1-BGh"/>
+                    <constraint firstItem="IWn-YK-bhb" firstAttribute="centerY" secondItem="bdT-77-o22" secondAttribute="centerY" id="rg6-gC-V04"/>
+                    <constraint firstItem="2vS-Fv-JyK" firstAttribute="top" relation="greaterThanOrEqual" secondItem="EnC-X0-ydR" secondAttribute="bottom" constant="16" id="tVB-BW-3DJ"/>
+                    <constraint firstAttribute="trailing" secondItem="IWn-YK-bhb" secondAttribute="trailing" constant="14" id="yFI-a9-t6d"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="movieRattingLabel" destination="IWn-YK-bhb" id="IGb-C2-W8A"/>
+                <outlet property="movieReleaseDateLabel" destination="2vS-Fv-JyK" id="fah-pA-gLN"/>
+                <outlet property="movieTitleLabel" destination="EnC-X0-ydR" id="u8b-IW-k4U"/>
+            </connections>
+            <point key="canvasLocation" x="-33.333333333333336" y="-36.495535714285715"/>
+        </tableViewCell>
+    </objects>
+</document>
